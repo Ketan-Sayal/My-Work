@@ -1,0 +1,56 @@
+doctype html 
+html 
+    head 
+        style
+            include ../static/style.css
+    body 
+        nav#navbar
+            ul  
+                div#logo 
+                    img(src="/static/img/logo.png", alt="logo")
+                    | HDA
+                li #[a(href="/") Home] 
+                li #[a(href="/") About] 
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact]
+        section#introSection 
+            div Welcome to Ketan's Dance academy
+            div.small Eat Sleep Dance Repeat
+        section#missionSection 
+            h2 Our Mission
+            
+            div.card
+                h3 Dance Perfection 
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/1.png", alt="photo 1")
+                    div.card-content
+                        p This is the best dance academy of the universe.
+            div.card
+                h3 Dance the way you like
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/2.png", alt="photo 1")
+                    div.card-content
+                        p This is the best dance academy of the universe.
+            div.card
+                h3 Expert Teaching
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/3.png", alt="photo 1")
+                    div.card-content
+                        p This is the best dance academy of the universe.
+
+        section#sponsorSection 
+            h2 Our Sponsors
+            div#sponsors 
+                img(src="/static/img/logo1.png", alt="logo 1").sp-img
+                img(src="/static/img/logo2.png", alt="logo 2").sp-img
+                img(src="/static/img/logo3.png", alt="logo 3").sp-img
+                img(src="/static/img/logo4.png", alt="logo 4").sp-img
+        footer#footer 
+            | Copyright &copy; 2024 KetanDanceAcademy.com | All rights reserved  
+        
+        script
+            include ../static/script.js 
